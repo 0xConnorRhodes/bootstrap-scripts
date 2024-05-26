@@ -6,6 +6,6 @@ sleep 5
 
 yes | pkg upgrade
 
-pkg add -y openssh
+pkg add -y openssh python
 
 echo 'set password with password, then run sshd'
