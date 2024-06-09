@@ -8,9 +8,14 @@ sudo apk add \
 	bat \
 	ripgrep \
 	chezmoi \
-	neovim
+	neovim \
+	alacritty \
+	fd \
+	fzf
 
 chezmoi init --apply 0xConnorRhodes
 chezmoi init --apply 0xConnorRhodes
 
 rm -r $HOME/ssl
+
+icewm -r
