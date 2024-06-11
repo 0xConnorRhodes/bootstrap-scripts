@@ -11,7 +11,8 @@ sudo apk add \
 	neovim \
 	alacritty \
 	fd \
-	fzf
+	fzf \
+	chromium
 
 chezmoi init --apply 0xConnorRhodes
 chezmoi init --apply 0xConnorRhodes
