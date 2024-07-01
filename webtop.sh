@@ -12,6 +12,7 @@ sudo apk add \
 	alacritty \
 	fd \
 	fzf \
+	pcmanfm \
 	chromium
 
 chezmoi init --apply 0xConnorRhodes
