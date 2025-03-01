@@ -1,6 +1,8 @@
 #!/usr/bin/env ruby
 
 packages = %w[
+  ruby
+  python3
   magic-wormhole
   fish
   zoxide
