@@ -3,6 +3,7 @@
 packages = %w[
   ruby
   python3
+  python3-pip
   magic-wormhole
   fish
   zoxide
