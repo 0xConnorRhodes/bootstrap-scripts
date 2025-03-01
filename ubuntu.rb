@@ -20,6 +20,6 @@ unless File.exist?(File.expand_path("~/.ssh/id_ed25519"))
   `ssh-keygen -q -a 100 -t ed25519 -f "$HOME/.ssh/id_ed25519" -N ""`
 end
 
-# Create symlinks for fd-find and bat
+# Create symlinks for fd and bat
 `sudo ln -s $(which fdfind) /usr/local/bin/fd`
 `sudo ln -s $(which batcat) /usr/local/bin/bat`
