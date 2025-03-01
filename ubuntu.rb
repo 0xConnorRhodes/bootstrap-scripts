@@ -10,5 +10,7 @@ packages = %w[
   lf
 ]
 
+`sudo apt install -y #{packages.join(' ')}`
+
 # `sh -c "$(curl -fsLS get.chezmoi.io/lb)" -- init --apply 0xConnorRhodes`
 # `~/.local/bin/chezmoi apply` # second run to decrypt secrets
