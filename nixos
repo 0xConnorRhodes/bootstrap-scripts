@@ -6,6 +6,4 @@ nix-shell -p git --command "git clone https://github.com/0xConnorRhodes/nix-forg
 
 cd ~/code/nix-forge
 
-#export NIX_CONFIG="experimental-features = nix-command flakes"
-
-nix-shell -p git --command "sudo nixos-rebuild switch --flake .#$hostname"
+nix-shell -p git --command "sudo nixos-rebuild switch --flake .#$host"
