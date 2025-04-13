@@ -10,10 +10,10 @@ if [[ $(uname) == "Linux" ]]; then
   if command -v nixos-version &> /dev/null; then
     nix-shell -p git --command "sudo nixos-rebuild switch --flake .#$host"
   else
-    # linux non-nixos
+    echo "linux non-nixos"
   fi
 elif [[ $(uname) == "Darwin" ]]; then
-  # darwin
+  echo "darwin"
 fi
 
 nix-shell -p chezmoi --command "chezmoi init --apply 0xConnorRhodes"
