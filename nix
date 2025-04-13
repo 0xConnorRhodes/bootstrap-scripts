@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+# pass $host on the command line in the form:
+# curl https://bootstrap.connor.engineer/nix | $host="testvm" bash
 
 mkdir ~/code
 
