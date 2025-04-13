@@ -6,4 +6,14 @@ nix-shell -p git --command "git clone https://github.com/0xConnorRhodes/nix-forg
 
 cd ~/code/nix-forge
 
-nix-shell -p git --command "sudo nixos-rebuild switch --flake .#$host"
+if [[ $(uname) == "Linux" ]]; then
+  if command -v nixos-version &> /dev/null; then
+    nix-shell -p git --command "sudo nixos-rebuild switch --flake .#$host"
+  else
+    # linux non-nixos
+  fi
+elif [[ $(uname) == "Darwin" ]]; then
+  # darwin
+fi
+
+nix-shell -p chezmoi --command "chezmoi init --apply 0xConnorRhodes"
